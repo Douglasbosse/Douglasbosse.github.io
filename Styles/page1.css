@@ -6,6 +6,8 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
@@ -131,6 +133,25 @@ body {
   object-position: center;
 }
 
+.report-link {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-color: #1f2d3d;
+  color: #fff;
+  padding: 14px 24px;
+  font: 500 35px/150% Inter, sans-serif;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .report-link {
+    padding: 0 22px;
+  }
+}
+
 .subtitle {
   color: #000;
   text-align: center;
@@ -144,6 +165,20 @@ body {
     max-width: 100%;
     font-size: 40px;
   }
+}
+
+.testimonial-container,
+.testimonial-grid,
+.testimonial-column {
+  width: 100%; /* Garante que ocupem toda a largura */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove paddings */
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  width: 100%;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 .testimonial-title {
   align-self: start;

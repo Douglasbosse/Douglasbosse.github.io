@@ -3,58 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Styles/styles.css" />
+    <link rel="stylesheet" href="/Styles/page1.css" />
+    <title>Inicio</title>
   </head>
-  <main class="container">
-    <header class="header">
-      <img loading="lazy" src="/img/HIVida (4) 1.png" class="logo" alt="Logo" />
-      <button class="back-button" onclick="window.location.href='page1.html';">
-        Voltar ao início
-      </button>
-    </header>
-    <section class="hero-section">
+
+  <header class="header">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b2b88093ccd4d9138d95646b7136096085a9e05567703b0c6cd71f71211d08b?apiKey=21d600639f724a2fa3584d93452896b8&"
+      alt="Logo"
+      class="logo"
+    />
+    <button class="cta-button" onclick="window.location.href='index.html';">
+      Deu positivo, e agora?
+    </button>
+  </header>
+  <main class="main-content">
+    <h1 class="main-title">IST's ainda são preocupantes...</h1>
+    <button
+      class="dashboard-button"
+      onclick="window.location.href='dashboard.html';"
+    >
+      Acesse os Dashboards
+    </button>
+
+    <section class="map-section">
       <img
-        loading="lazy"
-        src="/img/hiv-positivo-780x375 1.png"
-        class="hero-image"
-        alt="Background image for hero section"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/90ff182db32e943bf3e8fb29d919a728966a0cd646dc54461473671aa2b37af1?apiKey=21d600639f724a2fa3584d93452896b8&"
+        alt="Map of the region"
+        class="map-image"
       />
-      <a href="page6.html">
-        <h1 class="hero-text">Testei positivo!<br />Preciso de ajuda</h1>
-      </a>
     </section>
-    <div class="divider divider-hero"></div>
-    <a href="page3.html">
-      <img
-        loading="lazy"
-        src="/img/UNAIDS_186_EN 1.png"
-        class="logo-large"
-        alt="Large logo"
-      />
-    </a>
-    <div class="divider divider-large-logo"></div>
-    <section class="medication-section">
-      <img
-        loading="lazy"
-        src="/img/medicamentos.png"
-        class="medication-image"
-        alt="Background image for medication section"
-      />
-      <a href="page4.html">
-        <h2 class="medication-text">Medicamentos<br />Antirretrovirais</h2>
-      </a>
-    </section>
-    <div class="divider divider-medication"></div>
-    <section class="scenario-section">
-      <img
-        loading="lazy"
-        src="/img/bandeira-do-rio-grande-do-sul 1.png"
-        class="scenario-image"
-        alt="Background image for scenario section"
-      />
-      <a href="page2.html">
-        <h2 class="scenario-text">Cenário do RS</h2>
-      </a>
-    </section>
+
+    <h2 class="subtitle">...mas você não está sozinho e tem solução.</h2>
+    <a href="#" class="report-link" tabindex="0">Acesse a reportagem</a>
+
+    <p style="font-size: 60px; font-family: 'Inter', sans-serif">
+      <strong>Assista o vídeo abaixo:</strong>
+    </p>
+    <iframe
+      width="1080"
+      height="510"
+      src="https://www.youtube.com/embed/yWU5pg3Hz7c?si=uQE4kNGWedc8IPEa"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <div class="testimonial-container">
+      <div class="testimonial-grid">
+        <div class="testimonial-column">
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              "(...) Por mais incrível que parecesse, em nenhum deles eu vi a
+              palavra morte. Ao contrário, todos usavam sempre a expressão
+              "pessoas vivendo com HIV/AIDS", pessoas VIVENDO com HIV/AIDS.
+              Aquilo deu um tilt na minha cabeça."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/317e53fe041c1e905b8cd38077bb498990599dd6b57fe0b8ea9aceb7437701bd?apiKey=21d600639f724a2fa3584d93452896b8&"
+                alt="Valéria Piassa Polizzi"
+                class="author-image"
+              />
+              <div class="author-info">
+                <p class="author-name">Valéria Piassa Polizzi</p>
+                <p class="author-description">
+                  Autora do livro "Depois Daquela Viagem", onde relata sua
+                  vida.<br />Portadora do vírus da AIDS.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-content">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b2b88093ccd4d9138d95646b7136096085a9e05567703b0c6cd71f71211d08b?apiKey=21d600639f724a2fa3584d93452896b8&"
+        alt="UNAIDS Logo"
+        class="footer-logo"
+      />
+      <nav class="footer-links">
+        <a href="page3.html" class="footer-link">UNAIDS</a>
+        <a href="page4.html" class="footer-link-spaced"
+          >Medicamentos Antirretrovirais</a
+        >
+        <a href="page2.html" class="footer-link-bottom">Cenário do RS</a>
+      </nav>
+    </div>
+  </footer>
 </html>

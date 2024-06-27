@@ -1,0 +1,209 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 55px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .header {
+    background-color: #1f2d3d;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 22px 40px 22px 15px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  }
+  .logo {
+    aspect-ratio: 4.35;
+    object-fit: auto;
+    object-position: center;
+    width: 337px;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: auto 0;
+  }
+  .nav-button {
+    font-family: Inter, sans-serif;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    white-space: nowrap;
+    padding: 14px 24px;
+  }
+  @media (max-width: 991px) {
+    .nav-button {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .section-title {
+    color: #000;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-top: 84px;
+    font: 600 40px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .section-title {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+  .category-button {
+    font-family: Inter, sans-serif;
+    text-decoration-line: underline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #9c1c31;
+    margin-top: 58px;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 14px 24px;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+  @media (max-width: 991px) {
+    .category-button {
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .subcategory-button {
+    font-family: Inter, sans-serif;
+    text-decoration-line: underline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #9c1c31;
+    margin-top: 47px;
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 24px;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+  @media (max-width: 991px) {
+    .subcategory-button {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<main class="container">
+  <header class="header">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b2b88093ccd4d9138d95646b7136096085a9e05567703b0c6cd71f71211d08b?apiKey=21d600639f724a2fa3584d93452896b8&"
+      class="logo"
+      alt="Company logo"
+    />
+    <nav class="nav">
+      <button class="nav-button" onclick="window.location.href='index.html';">
+        Menu
+      </button>
+      <button class="nav-button" onclick="window.location.href='page1.html';">
+        Voltar ao início
+      </button>
+    </nav>
+  </header>
+  <section>
+    <h2 class="section-title">HIV Geral e Hiv Faixa Etária</h2>
+    <a
+      href="https://app.powerbi.com/groups/me/dashboards/b4dabdb5-a5ec-4b36-a79f-7eae022fad6c?redirectedFromSignup=1&experience=power-bi"
+      class="category-button-link"
+    >
+      <button class="category-button">Geral</button>
+    </a>
+    <a
+      href="https://app.powerbi.com/groups/me/dashboards/b4dabdb5-a5ec-4b36-a79f-7eae022fad6c?redirectedFromSignup=1&experience=power-bi"
+      class="category-button-link"
+    >
+      <button class="category-button">Faixa Etária</button>
+    </a>
+  </section>
+  <section>
+    <h2 class="section-title">Aids Geral e Aids Faixa Etária</h2>
+    <a
+      href="https://app.powerbi.com/groups/me/dashboards/9dcc6de6-64b5-4022-8b37-f5c3a9d665b8?redirectedFromSignup=1&experience=power-bi"
+      class="category-button-link"
+    >
+      <button class="category-button">Geral</button>
+    </a>
+    <a
+      href="https://app.powerbi.com/groups/me/dashboards/a48e81ec-b442-451c-866d-064828b78d64?redirectedFromSignup=1&experience=power-bi"
+      class="category-button-link"
+    >
+      <button class="category-button">Faixa Etária</button>
+    </a>
+  </section>
+  <section>
+    <h2 class="section-title">Sifilis Geral e Sifilis Faixa Etária</h2>
+    <a
+      href="https://app.powerbi.com/groups/me/dashboards/2b52f1b1-dbe3-407e-8161-431bf32b4ecc?redirectedFromSignup=1&experience=power-bi"
+      class="category-button-link"
+    >
+      <button class="category-button">Geral</button>
+    </a>
+    <a
+      href="https://app.powerbi.com/groups/me/dashboards/cf61ed1f-866b-42ac-a567-d30f33125ac0?redirectedFromSignup=1&experience=power-bi"
+      class="category-button-link"
+    >
+      <button class="category-button">Faixa Etária</button>
+    </a>
+  </section>
+</main>

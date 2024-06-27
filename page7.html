@@ -1,0 +1,381 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .page-wrapper {
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 80px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .header {
+    background-color: #1f2d3d;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    justify-content: space-between;
+    padding: 44px 80px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+  }
+
+  .logo {
+    aspect-ratio: 4.35;
+    object-fit: contain;
+    object-position: center;
+    width: 337px;
+    max-width: 100%;
+  }
+
+  .nav-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: auto 0;
+  }
+
+  .nav-button {
+    font-family: Inter, sans-serif;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    white-space: nowrap;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 991px) {
+    .nav-button {
+      white-space: initial;
+      padding: 10px 20px;
+    }
+  }
+
+  .main-title {
+    text-align: center;
+    letter-spacing: -1px;
+    margin-top: 117px;
+    width: 100%;
+    max-width: 1033px;
+    font: 700 50px Inter, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .main-title {
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+
+  .content-section {
+    text-align: justify;
+    font-family: Inter, sans-serif;
+    letter-spacing: -0.6px;
+    margin-top: 44px;
+    width: 100%;
+    max-width: 1033px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .content-section p,
+  .bold-text {
+    font-size: 20px; /* Ajuste o valor conforme necessário */
+  }
+
+  @media (max-width: 991px) {
+    .content-section {
+      margin-top: 40px;
+    }
+  }
+
+  .chart-image {
+    aspect-ratio: 2.44;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 39px;
+    max-width: 1155px;
+  }
+
+  .graph-image {
+    aspect-ratio: 1.72;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 21px;
+    max-width: 886px;
+  }
+
+  .stats-image {
+    aspect-ratio: 1.72;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 30px;
+    max-width: 888px;
+  }
+
+  .flowchart-image {
+    aspect-ratio: 1.43;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-width: 847px;
+    margin-top: 37px;
+  }
+
+  .bold-text {
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .contact-info {
+    color: #000;
+    text-align: justify;
+    letter-spacing: -0.6px;
+    font: 400 30px Inter, sans-serif;
+    max-width: 847px; /* Limita a largura da seção */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    padding: 20px; /* Ajuste conforme necessário para espaçamento interno */
+  }
+  .contact-info p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .report-link {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 #4caf50;
+    background-color: #1f2d3d;
+    color: #fff;
+    padding: 10px 20px;
+    font: 500 35px/150% Inter, sans-serif;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  @media (max-width: 991px) {
+    .report-link {
+      padding: 0 22px;
+    }
+  }
+</style>
+
+<div class="page-wrapper">
+  <header class="header">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b2b88093ccd4d9138d95646b7136096085a9e05567703b0c6cd71f71211d08b?apiKey=21d600639f724a2fa3584d93452896b8&"
+      class="logo"
+      alt="Company logo"
+    />
+    <nav class="nav">
+      <button class="nav-button" onclick="window.location.href='index.html';">
+        Menu
+      </button>
+      <button class="nav-button" onclick="window.location.href='page1.html';">
+        Voltar ao início
+      </button>
+    </nav>
+  </header>
+
+  <h1 class="main-title">
+    AIDS em Ijuí, Santo Ângelo e Santa Rosa: uma década de dados reveladores
+  </h1>
+
+  <section class="content-section">
+    <p>
+      Ijuí, Santo Ângelo e Santa Rosa, três cidades do Rio Grande do Sul com um
+      porte populacional semelhante (entre 75 e 85 mil habitantes), têm
+      enfrentado uma luta contínua contra a AIDS. Uma análise de dados coletados
+      entre 2013 e 2023, no Departamento de Informática do Sistema Único de
+      Saúde (DATASUS) traz informações sobre o perfil demográfico dos infectados
+      dos portadores da doença, modos de transmissão e os desafios na prevenção
+      e tratamento.
+    </p>
+    <p><span class="bold-text">Perfil Demográfico dos Casos de AIDS</span></p>
+    <p>
+      Ao longo desses dez anos, foram registrados 339 casos de AIDS nas três
+      cidades, sendo 105 infectados em Ijuí, 89 em Santo Ângelo e 145 em Santa
+      Rosa. A maioria dos infectados são do sexo masculino, representando 62,24%
+      dos casos, enquanto 37,76% são do sexo feminino. A análise da idade média
+      revela que as mulheres infectadas têm 38 anos, enquanto os homens têm 37
+      anos.
+    </p>
+  </section>
+
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e1b8ea3f41aca430e8cbf5beac25e4f45b40dadf2087f637aaac6983f706a54?apiKey=21d600639f724a2fa3584d93452896b8&"
+    class="chart-image"
+    alt="Chart showing AIDS cases distribution"
+  />
+
+  <section class="content-section">
+    <p><span class="bold-text">Faixa Etária</span></p>
+    <p>
+      A faixa etária com maior incidência de casos é entre 20 e 40 anos,
+      totalizando 185 casos. A distribuição dos casos por idade revela que a
+      maior parte dos infectados se concentra nos adultos jovens, com picos
+      significativos nas faixas de 20 a 29 anos (90 casos) e 30 a 39 anos (95
+      casos).
+    </p>
+  </section>
+
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3e6fd5ee9c6ae464c229414ba4a7ffa63be70c58f7649f4076fd47a45161ee1?apiKey=21d600639f724a2fa3584d93452896b8&"
+    class="graph-image"
+    alt="Graph showing age distribution of AIDS cases"
+  />
+
+  <section class="content-section">
+    <p>
+      Das 339 pessoas infectadas, 278 estão vivas, mostrando avanços nos
+      tratamentos e na gestão da doença. No entanto, 49 pessoas faleceram devido
+      à AIDS, e 1 pessoa morreu por outras causas. Existem ainda 11 casos onde o
+      status é ignorado.
+    </p>
+    <p><span class="bold-text">Cores e raças</span></p>
+    <p>
+      A grande maioria dos infectados se identifica como pessoa branca, com 291
+      casos (85,84%), seguida por pardos, com 18 casos, e pretos, com 8 casos.
+      Em 19 casos a raça não foi informada no DATASUS e 2 pessoas se
+      identificaram como amarelas. Esses dados refletem a porcentagem de pessoas
+      brancas residindo nas cidades, já que de acordo com o Censo de 2022 do
+      IBGE - Instituto Brasileiro de Geografia e Estatística, as três cidades
+      analisadas possuem populações predominantemente brancas. Ijuí com 77,6%,
+      Santo Ângelo com 78,5% e Santa Rosa com 80,2%.
+    </p>
+  </section>
+
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/bca1251d0bec17fbce0994e257403fef1abd605c953e2b006f223faad9d049d6?apiKey=21d600639f724a2fa3584d93452896b8&"
+    class="stats-image"
+    alt="Statistics on race distribution of AIDS cases"
+  />
+
+  <section class="content-section">
+    <p>
+      Os dados apontam que o grupo de risco predominante são homens brancos
+      entre 20 e 39 anos, que contraíram o vírus através de relações sexuais
+      desprotegidas.
+    </p>
+    <p>
+      Apenas 55,45% dos casos, que representam 188 das 339 infecções, possuem
+      informações registradas sobre a escolaridade, representando uma lacuna nos
+      dados do DATASUS. Entre os casos com escolaridade registrada, os níveis
+      mais comuns são a 5ª a 8ª série incompleta, com 53 casos (28,19%), e o
+      ensino médio completo, com 39 casos (20,74%). Ou seja, são raros os casos
+      em pessoas com ensino superior completo.
+    </p>
+    <p>
+      <span class="bold-text"
+        >Formas de transmissão: falta de uso de preservativos</span
+      >
+    </p>
+    <p>
+      Os dados revelam que todos os casos registrados ocorreram devido a
+      relações sexuais sem proteção. Não houveram casos de transmissão de mãe
+      para filho. Desde o ano de 1994, preservativos masculinos são distribuídos
+      no Brasil todo de forma gratuita nas unidades básicas de saúde, enquanto
+      os femininos são disponibilizados da mesma forma desde 2012.
+    </p>
+    <p><span class="bold-text">Deu positivo, e agora?</span></p>
+    <p>
+      Antes de qualquer decisão, é necessário manter a calma. Afinal, se o seu
+      positivo for para HIV, saiba que HIV e AIDS não são sinônimos. O HIV é o
+      vírus causador da AIDS e pode não se desenvolver se for tratado de forma
+      adequada. A AIDS é uma síndrome causada por ele, que enfraquece o sistema
+      imunológico favorecendo o desenvolvimento de outras doenças.
+    </p>
+    <p>
+      Os auxílios e acompanhamentos para o tratamento dessas infecções são
+      totalmente gratuitos e disponibilizados pelos SAEs (Serviços de
+      Atendimentos Especializados) dos municípios.
+    </p>
+    <p>
+      Os SAEs (Serviços de Atendimentos Especializados) são unidades de saúde
+      responsáveis pela gestão e atendimento de pacientes com condições
+      relacionadas a doenças transmissíveis, principalmente Infecções
+      Sexualmente Transmissíveis (IST/HIV/Aids e hepatites virais), tuberculose
+      e hanseníase.
+    </p>
+    <p>
+      Os SAEs trabalham de forma padronizada pelo Ministério da Saúde e devem
+      prestar atendimentos e acompanhamentos para qualquer pessoa infectada,
+      além de ter a responsabilidade de manter os nomes em sigilo.De acordo com
+      a equipe de enfermagem do SAE de Ijuí, após um paciente apresentar teste
+      positivo de HIV, são realizadas coletas de CV (exame da carga viral de
+      HIV) e CD4. Os linfócitos CD4 possuem um papel fundamental na
+      identificação e destruição de vírus que entram no corpo humano e são os
+      principais alvos do vírus HIV. O SAE também oferece acesso à terapia
+      antirretroviral e todo o acompanhamento necessário para cada caso conforme
+      protocolo do ministério da saúde e fluxograma abaixo. E, claro, os nomes
+      são mantidos em sigilo. Confira o fluxograma de atendimentos para pessoas
+      vivendo com HIV:
+    </p>
+  </section>
+
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d78d44dcabf79af6826b11d56eddb18434f8f4b7f78edcc971af2b14768b38a4?apiKey=21d600639f724a2fa3584d93452896b8&"
+    class="flowchart-image"
+    alt="Flowchart of HIV treatment process"
+  />
+
+  <section class="contact-info">
+    <p>
+      Em Ijuí, o SAE fica localizado na rua Vinte e Quatro de Setembro, 223 -
+      Centro e atende pelo telefone (55) 3331-8891.
+    </p>
+    <p>
+      Em Santo Ângelo, na rua 22 de Março, S/N, Centro Norte (em anexo ao Posto
+      22 de Março), atendendo pelo contato (55) 3312-0185.
+    </p>
+    <p>
+      Em Santa Rosa, na rua Dr. Francisco Timm, 480 e o contato pode ser feito
+      através do número (55) 3513-5160.
+    </p>
+  </section>
+
+  <a href="#" class="report-link" tabindex="0">Deu positivo, e agora?</a>
+  <a href="#" class="report-link" tabindex="0"
+    >Acesse os Dashboards completos</a
+  >
+</div>
