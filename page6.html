@@ -13,21 +13,25 @@
       alt="Company logo"
     />
     <nav class="nav">
-      <button class="nav-button" onclick="window.location.href='index.html';">
+      <button class="nav-button" onclick="window.location.href='page1.html';">
         Menu
       </button>
-      <button class="nav-button" onclick="window.location.href='page1.html';">
+      <button class="nav-button" onclick="window.location.href='index.html';">
         Voltar ao início
       </button>
     </nav>
   </header>
   <h1 class="main-title">Assista ao vídeo...</h1>
-  <img
-    loading="lazy"
-    src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a1ddfe9b049b0fd0188057761af3f617d69ce12c831227fd2f56be3c86aa97b?apiKey=21d600639f724a2fa3584d93452896b8&"
-    class="main-image"
-    alt="Video thumbnail"
-  />
+  <iframe
+    width="1080"
+    height="510"
+    src="https://www.youtube.com/embed/yWU5pg3Hz7c?si=uQE4kNGWedc8IPEa"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
   <hr class="divider" />
   <h2 class="subtitle">...e procure o SAE de sua cidade:</h2>
   <img
@@ -47,5 +51,7 @@
   </p>
   <hr class="divider" />
   <h2 class="encouragement">Você não está sozinho!</h2>
-  <button class="cta-button">Acesse os Dashboards</button>
+  <button class="cta-button" onclick="window.location.href='dashboard.html';">
+    Acesse os Dashboards
+  </button>
 </main>

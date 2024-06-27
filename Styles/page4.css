@@ -165,7 +165,8 @@ body {
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: bold;
 }
 @media (max-width: 991px) {
   .content-text {
