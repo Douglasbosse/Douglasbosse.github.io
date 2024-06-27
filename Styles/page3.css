@@ -77,15 +77,28 @@ body {
   margin-top: 38px;
   width: 320.5px;
 }
+.cta-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: default;
+}
 .cta-button {
-  border-radius: 4px;
-  box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.05);
+  transform: scale(0.7);
+  text-decoration-line: underline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   background-color: #4caf50;
   align-self: center;
-  margin-top: 25.5px;
+  width: 776px;
+  max-width: 100%;
   color: #fff;
-  padding: 7px 12px;
-  font: 300 16px/150% Inter, sans-serif;
+  margin: 48px 0 0 26px;
+  padding: 14px 24px;
+  font: 600 32px/150% Inter, sans-serif;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .header {
