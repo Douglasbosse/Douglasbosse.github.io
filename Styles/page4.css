@@ -165,6 +165,7 @@ body {
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
+  font-size: 15px;
 }
 @media (max-width: 991px) {
   .content-text {
@@ -178,16 +179,28 @@ body {
   width: 0.5px;
   height: 158.5px;
 }
-.cta-button {
+.cta-link {
+  display: flex;
   justify-content: center;
+  text-decoration: none;
+  cursor: default;
+}
+.cta-button {
+  transform: scale(0.7);
+  text-decoration-line: underline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   background-color: #4caf50;
   align-self: center;
+  width: 776px;
+  max-width: 100%;
   color: #fff;
-  margin: 35px 0 0 24px;
-  padding: 7px 5px;
-  font: 600 16px/150% Inter, sans-serif;
+  margin: 48px 0 0 26px;
+  padding: 14px 24px;
+  font: 600 32px/150% Inter, sans-serif;
   cursor: pointer;
-  border: 1px solid #000000;
 }
 @media (max-width: 991px) {
   .cta-button {
