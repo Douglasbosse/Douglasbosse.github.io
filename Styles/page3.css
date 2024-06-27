@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+.header {
+  background-color: #1f2d3d;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 22px 40px 22px 15px;
+  font: 250 8px/150% Inter, sans-serif;
+  color: #000;
+  box-sizing: border-box;
+}
+.logo {
+  aspect-ratio: 4.35;
+  object-fit: auto;
+  object-position: center;
+  width: 168.5px;
+}
+.nav {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto 0;
+}
+.nav-button {
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 7px 12px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 7px 12px;
+}
+.main-content {
+  display: flex;
+  margin-top: 19.5px;
+  width: 100%;
+  flex-direction: column;
+  font: 200 12.5px/1.5 "Jockey One", sans-serif;
+  color: #101010;
+  padding: 0 35.5px;
+  box-sizing: border-box;
+}
+.hero-image {
+  aspect-ratio: 5;
+  object-fit: auto;
+  object-position: center;
+  width: 50%;
+  align-self: center;
+}
+.description {
+  margin-top: 34.5px;
+}
+.additional-info {
+  align-self: flex-end;
+  margin-top: 38px;
+  width: 320.5px;
+}
+.cta-button {
+  border-radius: 4px;
+  box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.05);
+  background-color: #4caf50;
+  align-self: center;
+  margin-top: 25.5px;
+  color: #fff;
+  padding: 7px 12px;
+  font: 300 16px/150% Inter, sans-serif;
+}
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .nav-button,
+  .nav-link {
+    padding: 0 10px;
+  }
+  .main-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+  .description,
+  .additional-info {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .cta-button {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+}
